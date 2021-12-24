@@ -1,0 +1,43 @@
+*,*::after,*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "roboto mono", monospace;
+}
+body {
+    background: rgb(10,0,196);
+    background: linear-gradient(90deg, rgba(10,0,196,1) 0%, rgba(0,119,207,1) 100%);
+    font-size: 18px;
+}
+.content {
+    width: 650px;
+    position: absolute;
+    padding: 70px 40px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    transition: box-shadow 1s;
+}
+.content:hover {box-shadow: 0 20px 30px #000;}
+.content__converter {width: 45%;}
+input {
+    height: 40px;
+    width: 100%;
+    display: inline-block;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    margin-top: 10px;
+    font-size: 20px;
+}
+input:focus {outline: 3px solid #e5ff00;}
+label {text-transform: capitalize;}
+.error {
+    position: absolute;
+    bottom: 28px;
+    color: #e43232;
+}
